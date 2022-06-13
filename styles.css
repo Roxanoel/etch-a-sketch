@@ -16,11 +16,12 @@ button {
 }
 
 .pixel {
-    border: solid black 1px;
+    border: 1px solid lightgrey ;
     padding-bottom: 100%;
 }
 
 .coloured {
     background-color: black;
+    border: 1px solid black ;
 }
 
