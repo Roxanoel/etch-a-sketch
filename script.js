@@ -3,6 +3,9 @@ let gridSize = 16;
 
 // Cached refs
 const container = document.querySelector('.container');
+const squares = [];
+
+generateGrid();
 
 function generateGrid() {
     // Setting the grid size to the correct size
@@ -13,7 +16,17 @@ function generateGrid() {
         const newDiv = document.createElement('div');
         newDiv.classList.add('pixel');
         container.appendChild(newDiv);
+        squares.push(newDiv);
     }
+
+    addListeners(squares);
 }
 
-generateGrid();
+function addListeners(array) {
+    array.forEach(element => element.addEventListener('mouseenter', 
+    element => element.target.classList.add('coloured')));
+}
+
+function makeColoured(element) {
+    
+}

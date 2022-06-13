@@ -3,6 +3,10 @@
 }
 
 .pixel {
-    background-color: aqua;
+    border: solid black 1px;
     padding-bottom: 100%;
+}
+
+.coloured {
+    background-color: black;
 }
