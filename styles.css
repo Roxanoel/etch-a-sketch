@@ -1,0 +1,8 @@
+.container {
+    display: grid;
+}
+
+.pixel {
+    background-color: aqua;
+    padding-bottom: 100%;
+}
