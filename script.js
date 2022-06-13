@@ -20,11 +20,12 @@ function generateGrid(size) {
 
     // Setting the grid size to the correct size
     container.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
+    container.style.gridTemplateRows = `repeat(${size}, 1fr)`;
     
     // creating each square and appending it in the same go
     for (let i = 0; i < size*size; i++) {
         const newDiv = document.createElement('div');
-        newDiv.classList.add('pixel');
+        newDiv.classList.add('grid-cell');
         container.appendChild(newDiv);
         squares.push(newDiv);
     }

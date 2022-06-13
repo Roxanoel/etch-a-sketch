@@ -6,6 +6,14 @@ button {
 
 .grid-container {
     display: grid;
+    width: 720px;
+    height: 720px;
+    border: 5px outset;
+}
+
+.game-container {
+    padding: 48px;
+    gap: 36px;
 }
 
 .flex-column {
@@ -15,9 +23,12 @@ button {
     align-items: center;
 }
 
-.pixel {
+.flex-horizontal {
+    display: flex;
+}
+
+.grid-cell {
     border: 1px solid lightgrey ;
-    padding-bottom: 100%;
 }
 
 .coloured {
