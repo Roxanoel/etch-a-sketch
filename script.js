@@ -1,5 +1,6 @@
 // config params
 const defaultGridSize = 16;
+const minSize = 3;
 const maxSize = 100;
 
 // Cached refs
@@ -45,8 +46,8 @@ function addHoverListeners(array) {
 }
 
 function setupNewGrid() {
-    const newSize = +(prompt(`How wide should the new grid be? Maximum size = ${maxSize}`));
-    if (newSize <= maxSize){
+    const newSize = +(prompt(`How wide should the new grid be? It has to be between ${minSize} and ${maxSize}.`));
+    if (newSize <= maxSize && newSize >= minSize){
         generateGrid(newSize);
     }
     else{
