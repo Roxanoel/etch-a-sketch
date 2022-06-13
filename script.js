@@ -2,7 +2,7 @@
 let gridSize = 16;
 
 // Cached refs
-const container = document.querySelector('.container');
+const container = document.querySelector('.grid-container');
 const squares = [];
 
 generateGrid();

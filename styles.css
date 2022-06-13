@@ -1,5 +1,18 @@
-.container {
+button {
+    padding: 16px;
+    font-size: 24px;
+    margin: 24px;
+}
+
+.grid-container {
     display: grid;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .pixel {
@@ -10,3 +23,4 @@
 .coloured {
     background-color: black;
 }
+
